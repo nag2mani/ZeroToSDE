@@ -32,8 +32,6 @@
 * Complexity: Always O(n²).
 * Not stable.
 
----
-
 ### 2. **Bubble Sort**
 
 📝 *Mnemonic:* **“Big Bubbles Rise.”**
@@ -41,8 +39,6 @@
 * Think: Largest elements **bubble up** to the end with each pass.
 * Complexity: Best O(n) (already sorted), usually O(n²).
 * Stable.
-
----
 
 ### 3. **Insertion Sort**
 
@@ -52,8 +48,6 @@
 * Complexity: Best O(n), worst O(n²).
 * Stable.
 
----
-
 ### 4. **Merge Sort**
 
 📝 *Mnemonic:* **“Merge Pieces Together.”**
@@ -61,8 +55,6 @@
 * Think: Break into halves → sort → **merge** them back in order.
 * Complexity: Always O(n log n).
 * Stable, but uses extra memory.
-
----
 
 ### 5. **Quick Sort**
 
@@ -72,8 +64,6 @@
 * Complexity: Best/Avg O(n log n), Worst O(n²).
 * Not stable, but very fast in practice.
 
----
-
 ### 6. **Randomized Quick Sort**
 
 📝 *Mnemonic:* **“Random Pivot Prevents Pain.”**
@@ -81,8 +71,6 @@
 * Think: Choosing a random pivot avoids **worst-case pain** (O(n²)).
 * Expected O(n log n).
 * Not stable.
-
----
 
 ## 🔹 Super-Mnemonic (One-liner to Remember All)
 
