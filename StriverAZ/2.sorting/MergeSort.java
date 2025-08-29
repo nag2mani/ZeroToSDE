@@ -1,60 +1,68 @@
 import java.util.Arrays;
 
 public class MergeSort {
-    // Function to sort an array using merge sort
-    public static void mergeSort(int[] arr, int left, int right) {
-        if (left < right) {
-            int mid = left + (right - left) / 2;
-            // Sort first and second halves
-            mergeSort(arr, left, mid);
-            mergeSort(arr, mid + 1, right);
-            // Merge the sorted halves
-            merge(arr, left, mid, right);
+    //It is recursive funtion (First make two array and put element into it)
+    public static void mergeSort(int[] array){
+        if (array.length == 1){
+            return;
         }
+        int middle = array.length / 2;
+
+        int[] leftArray = new int[middle];
+        int[] rightArray = new int[array.length - middle];
+        int j=0;
+        int k=0;
+        for (int i=0;i<array.length;i++){
+            if (j < middle){
+                leftArray[j] = array[i];
+                j++;
+            } else{
+                rightArray[k] = array[i];
+                k++;
+            }
+        }
+        mergeSort(leftArray);
+        mergeSort(rightArray);
+        merge(leftArray, rightArray, array);
     }
-
-    // Function to merge two subarrays of arr[]
-    private static void merge(int[] arr, int left, int mid, int right) {
-        int n1 = mid - left + 1;
-        int n2 = right - mid;
-
-        int[] L = new int[n1];
-        int[] R = new int[n2];
-
-        for (int i = 0; i < n1; ++i)
-            L[i] = arr[left + i];
-        for (int j = 0; j < n2; ++j)
-            R[j] = arr[mid + 1 + j];
-
-        int i = 0, j = 0, k = left;
-        while (i < n1 && j < n2) {
-            if (L[i] <= R[j]) {
-                arr[k] = L[i];
+    
+    //It is iterative function (Merge two sorted array into one sorted array)
+    public static void merge(int[] leftArray, int[] rightArray, int[] array){
+        int leftSize = leftArray.length;
+        int rightSize = rightArray.length;
+        int i = 0, l=0, r=0;
+        while (l < leftSize && r < rightSize) {
+            if (leftArray[l] < rightArray[r]) {
+                array[i] = leftArray[l];
+                l++;
                 i++;
             } else {
-                arr[k] = R[j];
-                j++;
+                array[i] = rightArray[r];
+                r++;
+                i++;
             }
-            k++;
         }
-        while (i < n1) {
-            arr[k] = L[i];
+
+        while (r < rightSize) {
+            array[i] = rightArray[r];
+            r++;
             i++;
-            k++;
         }
-        while (j < n2) {
-            arr[k] = R[j];
-            j++;
-            k++;
+
+        while (l < leftSize) {
+            array[i] = leftArray[l];
+            l++;
+            i++;
         }
+
     }
 
     public static void main(String[] args) {
         // Test the merge sort implementation
-        // int[] arr = { 13, 46, 11, -1, 24, -52, 20, 9, 0, 2, 2 };
-        int[] arr = { 29, 10, 14, 37, 13 };
+        int[] arr = { 13, 46, 11, -1, 24, -52, 20, 9, 0, 2, 2 };
+        // int[] arr = { 29, 10, 14, 37, 13 };
         System.out.println("Original Array: " + Arrays.toString(arr));
-        mergeSort(arr, 0, arr.length - 1);
+        mergeSort(arr);
         System.out.println("Sorted Array: " + Arrays.toString(arr));
     }
 }
