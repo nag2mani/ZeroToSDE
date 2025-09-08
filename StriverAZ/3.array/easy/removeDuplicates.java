@@ -3,4 +3,7 @@ public class removeDuplicates {
         //array is sorted increasing order.
         int[] arr = {1, 1,2,3, 3,4,5};
     }
+    public static int[] removeDuplicate(int[] arr){
+
+    }
 }
