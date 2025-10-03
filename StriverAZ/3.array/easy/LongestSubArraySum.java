@@ -1,15 +1,24 @@
 public class LongestSubArraySum {
     public static void main(String[] args) {
-        int arr[] = {5,5,2,3,5,1,9};
+        int arr[] = {1,2};
         int target = 10;
-        System.out.println("Length of longest subarray with sum 0 is: " + findLongestSubarray(arr, target));
+        printallsubarrays(arr);
+        // System.out.println("Length of longest subarray with sum 0 is: " + findLongestSubarraySum(arr, target));
+    }
+
+    public static void printallsubarrays(int[] arr){
+        int n = arr.length;
+        for (int i = 0; i < n; i++) {
+            for (int j = i; j < n; j++) {
+                for (int k = i; k <= j; k++) {
+                    System.out.print(arr[k] + " ");
+                }
+                System.out.println();
+            }
+        }
     }
 
     public static int findLongestSubarraySum(int[] arr, int target){
-        int i = 0;
-        int j = 0;
-        while (condition) {
-            
-        }
+        return 4;
     }
 }
