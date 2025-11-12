@@ -36,13 +36,6 @@ public class SortArray012 {
         System.out.println("Before: " + Arrays.toString(arr4));
         method2_sorting012(arr4, 10);
         System.out.println("After:  " + Arrays.toString(arr4));
-        
-        // Test with pivot = 2
-        int[] arr5 = {11,3,5,2,15,9,1,4,5,7,5,8,5,2};
-        System.out.println("\nTest 4 - Pivot = 2:");
-        System.out.println("Before: " + Arrays.toString(arr5));
-        method2_sorting012(arr5, 2);
-        System.out.println("After:  " + Arrays.toString(arr5));
     }
 
     public static void swap(int[] arr, int i, int j) {
@@ -72,18 +65,18 @@ public class SortArray012 {
 
     public static void method2_sorting012(int[] arr, int pivot) { // Generalized approach: Dutch National Flag Algorithm.
         int low = 0; // elements before low are < pivot
-        int mid = 0;
+        int i = 0;
         int high = arr.length - 1; // elements after high are > pivot
         
-        while (mid <= high) {
-            if (arr[mid] < pivot) {
-                swap(arr, low, mid);
+        while (i <= high) {
+            if (arr[i] < pivot) {
+                swap(arr, i, low);
                 low++;
-                mid++;
-            } else if (arr[mid] == pivot) {
-                mid++;
+                i++;
+            } else if (arr[i] == pivot) {
+                i++;
             } else {
-                swap(arr, mid, high);
+                swap(arr, i, high);
                 high--;
             }
         }
