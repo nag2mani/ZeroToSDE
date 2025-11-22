@@ -1,3 +1,4 @@
+package striver.striver_az.array.medium;
 import java.util.Arrays;
 
 public class RearrangeArrayElementsBySign {

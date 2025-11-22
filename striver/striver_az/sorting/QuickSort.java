@@ -1,3 +1,5 @@
+package striver.StriverAZ.sorting;
+
 import java.util.Arrays;
 
 public class QuickSort {
