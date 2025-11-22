@@ -1,3 +1,4 @@
+package striver.striver_az.sorting;
 import java.util.Arrays;
 
 public class InsertionSort {

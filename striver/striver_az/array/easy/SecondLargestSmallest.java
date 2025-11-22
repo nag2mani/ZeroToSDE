@@ -1,3 +1,4 @@
+package striver.striver_az.array.easy;
 public class SecondLargestSmallest {
     public static void main(String[] args) {
         int[] arr = {3,66,787,0,-1};

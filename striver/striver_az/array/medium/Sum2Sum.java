@@ -1,3 +1,4 @@
+package striver.striver_az.array.medium;
 import java.util.ArrayList;
 import java.util.HashMap;
 public class Sum2Sum {

@@ -1,3 +1,4 @@
+package striver.striver_az.array.easy;
 public class maxConsecutiveOne {
     public static void main(String[] args) {
         int[] arr = {1, 0, 1, 1,1, 0,1,1,1,1};

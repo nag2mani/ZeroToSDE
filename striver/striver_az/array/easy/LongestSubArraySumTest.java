@@ -1,3 +1,4 @@
+package striver.striver_az.array.easy;
 public class LongestSubArraySumTest { // FIRST NEED TO COMPILE THIS FILE.
     public static void main(String[] args) {
         int passed = 0;

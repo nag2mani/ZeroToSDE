@@ -1,3 +1,4 @@
+package striver.striver_az.array.easy;
 public class findOneOccurence {
     public static void main(String[] args) {
         int[] arr = {1,8,2,3,4,5,1,2,3,4,8,5,767};

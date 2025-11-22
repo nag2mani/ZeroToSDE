@@ -1,3 +1,4 @@
+package striver.striver_az.array.medium;
 public class BuySellStock_I {
     public static void main(String[] args) {
         // int[] prices = {7,1,5,3,6,4};

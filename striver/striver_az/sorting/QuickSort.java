@@ -1,4 +1,4 @@
-package striver.StriverAZ.sorting;
+package striver.striver_az.sorting;
 
 import java.util.Arrays;
 

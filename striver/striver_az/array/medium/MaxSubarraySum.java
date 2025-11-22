@@ -1,3 +1,4 @@
+package striver.striver_az.array.medium;
 public class MaxSubarraySum {
     // find the contiguous subarray (containing at least one number) which has the largest sum.
     // returns its sum and prints the subarray.

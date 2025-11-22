@@ -1,3 +1,4 @@
+package striver.striver_az.basic;
 import java.util.*;
 
 public class CollectionClass {

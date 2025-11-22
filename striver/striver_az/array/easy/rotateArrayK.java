@@ -1,3 +1,4 @@
+package striver.striver_az.array.easy;
 public class rotateArrayK {
     public static void main(String[] args) {
         // int[] arr = {1,2,3,4,5};

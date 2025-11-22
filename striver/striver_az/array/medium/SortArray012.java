@@ -1,3 +1,4 @@
+package striver.striver_az.array.medium;
 import java.util.Arrays;
 
     // Given an array consisting of only 0s, 1s, and 2s. Write a program to in-place

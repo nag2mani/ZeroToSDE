@@ -1,3 +1,4 @@
+package striver.striver_az.basic;
 //ctrl + x (To exit the file, then it will ask for write out)
 //y(just click y to save then click enter)
 //enter (when you click enter you will be redirected to the terminal)

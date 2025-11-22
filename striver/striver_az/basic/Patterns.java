@@ -1,3 +1,4 @@
+package striver.striver_az.basic;
 import java.util.ArrayList;
 
 public class Patterns {

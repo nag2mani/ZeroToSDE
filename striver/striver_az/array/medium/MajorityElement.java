@@ -1,3 +1,4 @@
+package striver.striver_az.array.medium;
 import java.util.*;
 public class MajorityElement {
     // Return an element that occurs more than N/2 times in the given array.

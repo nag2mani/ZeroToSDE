@@ -1,3 +1,4 @@
+package striver.striver_az.array.easy;
 public class linearSearch {
     public static void main(String[] args) {
         int[] arr = {1,2,0,1,0,4,0};

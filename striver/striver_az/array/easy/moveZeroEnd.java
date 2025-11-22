@@ -1,3 +1,4 @@
+package striver.striver_az.array.easy;
 import java.util.Arrays;
 
 public class moveZeroEnd {
