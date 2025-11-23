@@ -30,4 +30,9 @@ public class LongestConsecutiveSequence {
         }
         return longeststreak;
     }
+
+
+    public static int LongestConsecutiveSequences(int[] arr){
+        // leetcode 128 TLE
+    }
 }

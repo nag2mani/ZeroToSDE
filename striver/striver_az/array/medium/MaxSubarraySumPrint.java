@@ -27,8 +27,17 @@ public class MaxSubarraySum {
                 }
             }
         }
-        // printArray(arr, startIndex, endIndex);
+        printArray(arr, startIndex, endIndex);
         return maxsum;
+    }
+
+    public static void printArray(int[] arr, int start, int end) {
+        System.out.print("Subarray with max sum: [");
+        for (int k = start; k < end+1; k++) {
+            System.out.print(arr[k]);
+            if (k < end) System.out.print(", ");
+        }
+        System.out.println("]");
     }
 
     public static int method2_maxSubarraySum(int[] arr) {

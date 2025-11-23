@@ -1,8 +1,8 @@
-package striver.striver_az.array.easy;
+package striver.striver_az.array.medium;
 import java.util.HashMap;
 import java.util.Map;
 
-public class SubarraySum {
+public class CountSubarraySumK {
     public static void main(String[] args) {
         int k = 0;
         int[] arr1 = {6, -1, -3, 4, -2, 2, 4, 6, -12, -2}; // 5
@@ -56,13 +56,10 @@ public class SubarraySum {
 
         for (int i = 0; i < arr.length; i++) {
             prefix_sum = prefix_sum + arr[i];
-            int v = map.getOrDefault(prefix_sum, 0);
-            if (v==0){
-                map.put(prefix_sum, 1);
-            } else {
-                total = total + v;
-                map.put(prefix_sum, v+1);
-            }
+            int target = prefix_sum - k;
+            int count = map.getOrDefault(target, 0);
+            total = total + count;
+            map.put(prefix_sum, map.getOrDefault(prefix_sum, 0) + 1);
         }
         return total;
     }
