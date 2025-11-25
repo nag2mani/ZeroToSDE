@@ -3,9 +3,11 @@ public class MaxSubarraySum {
     // find the contiguous subarray (containing at least one number) which has the largest sum.
     // returns its sum and prints the subarray.
     public static void main(String[] args) {
-        int[] arr = {-2,1,-3,4,-1,2,1,-5,4};
+        int[] arr = {-1};
         int maxSum = method1_maxSubarraySum(arr);
+        int maxSum1 = method2_maxSubarraySum(arr);
         System.out.println("Maximum Subarray Sum: " + maxSum); 
+        System.out.println("Maximum Subarray Sum1: " + maxSum1); 
     }
 
     public static int method1_maxSubarraySum(int[] arr) {
@@ -32,7 +34,13 @@ public class MaxSubarraySum {
     }
 
     public static int method2_maxSubarraySum(int[] arr) {
-        // Above method is TLE. Leetcode 53
+        int max = Integer.MIN_VALUE;
+        int curr_sub_sum = 0;
+        for (int i : arr) {
+            curr_sub_sum = Math.max(i, i+curr_sub_sum);
+            max = Math.max(max, curr_sub_sum);
+        }
+        return max;
     }
 
 }
