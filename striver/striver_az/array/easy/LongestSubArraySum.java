@@ -5,8 +5,8 @@ import java.util.Map;
 public class LongestSubArraySum {
     public static void main(String[] args) {
         int k = 0;
-        int[] arr1 = {6, -1, -3, 4, -2, 2, 4, 6, -12, -2}; // 5
-        int[] arr2 = {6, 4, -5, 1, 8, 3, 2, -10, -4, 0, 4, -9}; // 6
+        int[] arr1 = {9, -3, 3, -1, 6, -5}; // 6
+        int[] arr2 = {6, -2, 2, -8, 1, 7, 4, -10}; // 8
         int[] arr3 = {0,0,5,5,0,0, 0}; // 6
         // printallsubarrays(arr1);
         System.out.println("Longest Subarray with given Sum K using Method1 : " + method1(arr1, k) + ", " + method1(arr2, k) + ", " + method1(arr3, k));
