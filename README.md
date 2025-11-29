@@ -1,10 +1,10 @@
-# 🚀 SDE Interview Preparation Repository
+# SDE Interview Preparation Repository
 
 A comprehensive collection of Data Structures, Algorithms, and System Design resources for Software Development Engineer (SDE) interviews. This repository covers everything from fundamental data structures to advanced problem-solving techniques used in top tech companies.
 
 ---
 
-## 📚 Repository Structure
+## Repository Structure
 
 ### **1. Data Structures & Algorithms** (`dataStructures/`)
 Core implementations and algorithms:
@@ -48,7 +48,7 @@ System design fundamentals and patterns for scalable systems.
 
 ---
 
-## 🎯 Key Features
+## Key Features
 
 ✅ **Comprehensive Coverage**: From basic arrays to advanced graph algorithms  
 ✅ **Multiple Languages**: Java and Python implementations  
@@ -58,7 +58,7 @@ System design fundamentals and patterns for scalable systems.
 
 ---
 
-## 📖 Learning Path
+## Learning Path
 
 1. **Start with Basics**: Data Structures fundamentals (`dataStructures/`)
 2. **Practice Problems**: LeetCode Blind 75 (`leetCode/blind75/`)
@@ -68,43 +68,11 @@ System design fundamentals and patterns for scalable systems.
 
 ---
 
-## 🛠️ Technologies & Languages
+## Technologies & Languages
 
 - **Java**: Primary language for algorithm implementations
 - **Python**: Alternative implementations and quick solutions
 - **Jupyter Notebooks**: Interactive problem-solving and explanations
 
----
-
-## 📝 Daily Goal
-
-**Solve at least one coding problem per day** and continuously update the repository with new solutions and insights.
-
----
-
-## 🎓 Interview Topics Covered
-
-| Category | Topics |
-|----------|--------|
-| **Data Structures** | Arrays, Linked Lists, Stacks, Queues, Trees, Graphs, Heaps, Hash Tables |
-| **Algorithms** | Sorting, Searching, Greedy, Dynamic Programming, Backtracking, Graph Algorithms |
-| **Problem Patterns** | Two Pointers, Sliding Window, Binary Search, BFS/DFS, Topological Sort |
-| **System Design** | Scalability, Architecture patterns, Database design |
-
----
-
-## 📌 Quick Reference
-
-- **Most Asked Problems**: See `leetCode/info.md` for frequently asked problems in product-based companies
-- **Data Structure Implementations**: See `dataStructures/info.md` for common DS implementations
-- **Java Package Guide**: See `striver/info.md` for Java package and import best practices
-
----
-
-## 🤝 Contributing
-
-This is a personal learning repository. Feel free to fork and adapt for your own interview preparation journey.
-
----
 
 **Happy Coding! 🚀**
