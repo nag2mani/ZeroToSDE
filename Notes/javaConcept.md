@@ -755,8 +755,3 @@ public class MergeSort {
 - [Oracle Java Packages Tutorial](https://docs.oracle.com/javase/tutorial/java/package/index.html)
 - [Java Access Modifiers](https://docs.oracle.com/javase/tutorial/java/javaOO/accesscontrol.html)
 - [Static vs Instance Methods](https://docs.oracle.com/javase/tutorial/java/javaOO/classvars.html)
-
----
-
-**Last Updated:** Based on this codebase structure
-**Author:** Java Package and Import Guide
