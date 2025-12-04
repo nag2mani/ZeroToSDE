@@ -1,0 +1,17 @@
+  Summary
+
+  Commands executed:
+  1. git remote -v - Checked remote configuration
+  2. git config --list - Checked Git configuration
+  3. ssh -T git@github.com - Tested SSH authentication
+  4. git remote set-url origin git@github.com:nag2mani/ZeroToSDE.git - Switched to SSH
+  5. git remote -v - Verified the change
+  6. git push - Tested the fix
+
+  Problem:
+  • Repository was using HTTPS, which pulled cached credentials for nagmani-indihood from macOS keychain
+  • This caused a 403 permission denied error
+
+  Solution:
+  • Changed remote URL from HTTPS to SSH
+  • SSH was already configured for your personal account (nag2mani)
