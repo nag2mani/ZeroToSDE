@@ -1,4 +1,4 @@
-package striver.striver_az.binarysearch;
+package striver.striver_az.binarysearch.bs_on_1d;
 
 public class LowerBound {
     // finds the first or the smallest index in a sorted array where the value at that index is greater than or equal to a given key i.e. target.

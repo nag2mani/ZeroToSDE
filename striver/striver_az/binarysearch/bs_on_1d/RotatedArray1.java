@@ -1,4 +1,4 @@
-package striver.striver_az.binarysearch;
+package striver.striver_az.binarysearch.bs_on_1d;
 // work only for distinct elements in an array.
 public class RotatedArray1 {
     public static void main(String[] args) {
@@ -17,7 +17,7 @@ public class RotatedArray1 {
             if (arr[mid] == target) {
                 return mid;
             }
-            
+
             // Now check which part is sorted (Gurenteed : one part will be sorted).
             if (arr[first] <=  arr [mid]) {
                 // Left part of array is sorted.

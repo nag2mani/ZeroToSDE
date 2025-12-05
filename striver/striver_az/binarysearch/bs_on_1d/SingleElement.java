@@ -1,4 +1,4 @@
-package striver.striver_az.binarysearch;
+package striver.striver_az.binarysearch.bs_on_1d;
 
 public class SingleElement {
     // You are given a sorted array consisting of only integers where every element appears exactly twice,

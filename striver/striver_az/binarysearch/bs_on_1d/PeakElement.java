@@ -1,4 +1,4 @@
-package striver.striver_az.binarysearch;
+package striver.striver_az.binarysearch.bs_on_1d;
 
 public class PeakElement {
     public static void main(String[] args) {

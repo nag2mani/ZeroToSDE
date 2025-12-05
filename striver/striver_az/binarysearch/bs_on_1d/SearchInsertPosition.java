@@ -1,4 +1,4 @@
-package striver.striver_az.binarysearch;
+package striver.striver_az.binarysearch.bs_on_1d;
 public class SearchInsertPosition {
     public static void main(String[] args) {
         int[] arr = {1,2,2,3}; //1
