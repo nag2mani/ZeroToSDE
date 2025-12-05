@@ -1,6 +1,7 @@
 package striver.striver_az.binarysearch;
 
 public class UpperBound {
+    // finds the first or the smallest index in a sorted array where the value at that index is greater than the given key i.e. x.
     public static void main(String[] args) {
         int[] arr = {1,2,2,3}; //1
         int target = 2;
