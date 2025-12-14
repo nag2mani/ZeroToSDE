@@ -1,9 +1,11 @@
 public class NthRoot {
 
     public static void main(String[] args) {
-        int num = 81;
-        int n = 4;
-        System.out.println(nthRoot(num, n));
+        int[] testCases = {0, 1, 2, 4, 8, 9, 15, 16, 17, 18, 19, 20, 21, 25};
+        int n = 2;
+        for (int num : testCases) {
+            System.out.println("nthroot(" + num + ") = " + nthRoot(num, n));
+        }
     }
 
     public static int nthRoot(int number, int n) {
